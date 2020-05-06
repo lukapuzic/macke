@@ -2,7 +2,7 @@
 #ifndef CENA_HPP_INCLUDED
 #define CENA_HPP_INCLUDED
 #include "Macka.hpp"
-class CENA:public MACKA {
+class CENA {
 protected:
     double cena;
 public:
