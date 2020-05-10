@@ -25,6 +25,24 @@ public:
         datumrodjenja.mesec=a;
         datumrodjenja.godina=s;
     }
+    friend ostream& operator<<(ostream& izlaz, const PEDIGRE& o){
+
+izlaz<<"Pedigre - ispis"<<endl;
+
+izlaz<<"cistokrvnost: "<<o.cistokrvnost<<endl;
+
+izlaz<<o.datumrodjenja<<endl;
+        
+izlaz<<"vakcinacija: "<<o.vakcinacija<<endl;       
+        
+izlaz<<"pasos: "<<o.pasos<<endl;
+        
+izlaz<<"papiri: "<<o.papiri<<endl;
+
+return izlaz;
+
+}
+
 };
 
 #endif // PEDIGRE_HPP_INCLUDED
