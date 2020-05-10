@@ -9,6 +9,7 @@ protected:
     Pas pas;
     Cena cena;
 public:
-    Oglas(string r, PolPsa p, double c, double k, bool ncP):pas(r,p), cena(c,k,ncP){}
+    static int ukupanbrojOglasa;
+    Oglas(string r, PolPsa p, double c, double k, bool ncP):pas(r,p), cena(c,k,ncP){ukupanbrojOglasa++;}
 };
 #endif // OGLAS_HPP_INCLUDED
