@@ -21,7 +21,7 @@ izlaz<<"Rasa: "<<o.rasa<<endl;
 
 izlaz<<"pol:"<<o.pol<<endl;
         
-izlaz<<"pedigre:"<<o.pedigre<<endl<<endl;
+izlaz<<o.pedigre<<endl<<endl;
 
 
 return izlaz;
