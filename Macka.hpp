@@ -13,4 +13,18 @@ public:
     rasa=i;PolMacke
     pol=y;
     }
+    friend ostream& operator<<(ostream& izlaz, const MACKA& o){
+
+izlaz<<"MACKA - ispis"<<endl;
+
+izlaz<<"Rasa: "<<o.rasa<<endl;
+
+izlaz<<"pol:"<<o.pol<<endl;
+        
+izlaz<<"pedigre:"<<o.pedigre<<endl<<endl;
+
+
+return izlaz;
+    }
+};
 #endif // MACKA_HPP_INCLUDED
