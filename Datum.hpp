@@ -8,25 +8,19 @@ protected:
     int mesec;
     int godina;
 public:
-    Datum(int d, int m, int g)
+    Datum(int d=1, int m=1, int g=2020)
     {
-    dan=d;
-    mesec=m;
-    godina=g;
+        dan=d;
+        mesec=m;
+        godina=g;
     }
-  friend ostream& operator<<(ostream& izlaz, const Datum& o){
-
-izlaz<<"Datum - ispis"<<endl;
-
-izlaz<<"Dan: "<<o.dan<<endl;
-
-izlaz<<"Mesec: "<<o.mesec<<endl;
-    
-izlaz<<"Godina: "<<o.godina<<endl<<endl;    
-
-return izlaz;
-
-}
+    friend ostream& operator<<(ostream& izlaz, const Datum& o){
+        izlaz<<"Datum - ispis"<<endl;
+        izlaz<<"Dan: "<<o.dan<<endl;
+        izlaz<<"Mesec: "<<o.mesec<<endl;
+        izlaz<<"Godina: "<<o.godina<<endl<<endl;    
+        return izlaz;
+    }
 };
 
 #endif // DATUM_HPP_INCLUDED
