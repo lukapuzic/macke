@@ -1,13 +1,14 @@
-
 #ifndef CENA_HPP_INCLUDED
 #define CENA_HPP_INCLUDED
-#include "Macka.hpp"
 class CENA {
 protected:
     double cena;
+    string valuta;
 public:
-    CENA(double z=0, string i, PolMacke y, bool u, bool i , bool o, int p, int a, int s):MACKA(y, u ,i , o , p , a , s , d ){
-    cena = z;}
+    CENA(double c=0,string v="RSD"){
+	    cena = c;
+	    valuta = v;
+	}
 };
 
 #endif // CENA_HPP_INCLUDED
