@@ -1,47 +1,27 @@
-
 #ifndef PEDIGRE_HPP_INCLUDED
 #define PEDIGRE_HPP_INCLUDED
-struct Datum
-{
-    int mesec
-    int dan
-    int godina
-}
 class PEDIGRE
 {
 protected:
     bool cistokrvnost;
-    Datum datumrodjenja
+    Datum datumrodjenja;
     bool vakcinacija;
     bool pasos;
-    bool papiri;
 public:
-    PEDIGRE(bool u = true, bool i = true , bool o = true, int p = 1, int a = 1, int s = 2020)
+    PEDIGRE(bool ck = true, bool v = true , bool pas = true, int d = 1, int m = 1, int g = 2020):datumrodjenja(d,m,g)
     {
-        cistokrvnost=u;
-        vakcinacija=i;
-        pasos=o;
-        datumrodjenja.dan=p; ;
-        datumrodjenja.mesec=a;
-        datumrodjenja.godina=s;
+        cistokrvnost=ck;
+        vakcinacija=v;
+        pasos=pas;
     }
     friend ostream& operator<<(ostream& izlaz, const PEDIGRE& o){
-
-izlaz<<"Pedigre - ispis"<<endl;
-
-izlaz<<"cistokrvnost: "<<o.cistokrvnost<<endl;
-
-izlaz<<o.datumrodjenja<<endl;
-        
-izlaz<<"vakcinacija: "<<o.vakcinacija<<endl;       
-        
-izlaz<<"pasos: "<<o.pasos<<endl;
-        
-izlaz<<"papiri: "<<o.papiri<<endl;
-
-return izlaz;
-
-}
+        izlaz<<"Pedigre - ispis"<<endl;
+        izlaz<<"cistokrvnost: "<<o.cistokrvnost<<endl;
+        izlaz<<o.datumrodjenja<<endl;     
+        izlaz<<"vakcinacija: "<<o.vakcinacija<<endl;            
+        izlaz<<"pasos: "<<o.pasos<<endl;  
+        return izlaz;
+    }
 
 };
 

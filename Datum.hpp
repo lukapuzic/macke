@@ -1,4 +1,3 @@
-  
 #ifndef DATUM_HPP_INCLUDED
 #define DATUM_HPP_INCLUDED
 
